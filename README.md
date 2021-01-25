@@ -1,8 +1,8 @@
 # soundworks-plugin-auth
 
-## soundworks plugin allowing to password protect soundworks clients
+### soundworks plugin allowing to password protect soundworks clients
 
-How to use :
+## server side example
 
 ```es6
 // src/server/index.js
@@ -17,7 +17,6 @@ server.pluginManager.register('auth', pluginAuthFactory, {
 (async function launch() {
   //...
 })();
-// ...
 ```
 
 ```es6
@@ -35,6 +34,8 @@ class ProtectedExperience extends AbstractExperience {
 
 export default ProtectedExperience;
 ```
+
+## client side example
 
 ```es6
 // src/clients/protected/index.js
