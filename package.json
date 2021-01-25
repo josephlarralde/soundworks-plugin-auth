@@ -1,0 +1,18 @@
+{
+  "name": "soundworks-plugin-auth",
+  "version": "1.0.0",
+  "description": "soundworks plugin requiring password to protect clients",
+  "scripts": {
+    "clean": "rm -Rf client && rm -Rf server",
+    "prepublishOnly": "npm run build",
+    "build": "npm run clean && babel src --out-dir .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joseph larralde",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1"
+  }
+}
